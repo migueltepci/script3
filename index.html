@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercício de JavaScript</title>
+<script>
+function processarTexto() {
+    var inputTexto = document.getElementById("texto").value;
+    var tamanhoTexto = inputTexto.length;
+    var textoMaiusculo = inputTexto.toUpperCase();
+    var textoMinusculo = inputTexto.toLowerCase();
+
+    document.getElementById("resultado").innerHTML = "Tamanho da String: " + tamanhoTexto + "<br>" +
+                                                       "String em maiúsculo: " + textoMaiusculo + "<br>" +
+                                                       "String em minúsculo: " + textoMinusculo;
+}
+</script>
+</head>
+<body>
+
+<input type="text" id="texto" placeholder="Digite um texto">
+<button onclick="processarTexto()">Processar</button>
+
+<div id="resultado"></div>
+
+</body>
+</html>
